@@ -1,0 +1,20 @@
+study( title="4Hr breaks", overlay=true )
+
+segment1 = "0200-0600"
+segment2 = "0600-1000"
+segment3 = "1000-1400"
+segment4 = "1400-1800"
+segment5 = "1800-2200"
+segment6 = "2200-0200"
+
+blue1  = #0000FF16
+blue2  = #0000FF10
+
+BarInSegment(sess) => na(time(period, sess)) == false
+
+bgcolor(color=BarInSegment(segment1)[1] ? blue1 : na )
+bgcolor(color=BarInSegment(segment2)[1] ? blue2 : na )
+bgcolor(color=BarInSegment(segment3)[1] ? blue1 : na )
+bgcolor(color=BarInSegment(segment4)[1] ? blue2 : na )
+bgcolor(color=BarInSegment(segment5)[1] ? blue1 : na )
+bgcolor(color=BarInSegment(segment6)[1] ? blue2 : na )
