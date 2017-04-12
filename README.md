@@ -1,4 +1,4 @@
-# IdentifyingIntradayTradingSetupsPart
+# Identifying Intraday Trading Setups
 Code to accompany the article Identifying intraday trading setups at;
 
 https://scalptrader.com/?p=11
